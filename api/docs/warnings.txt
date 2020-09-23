@@ -1,0 +1,472 @@
+Array
+(
+    [0] => Array
+        (
+            [line] => 12
+            [file] => api\assets\AppAsset.php
+            [message] => No docblock for element '$basePath'
+        )
+
+    [1] => Array
+        (
+            [line] => 12
+            [file] => api\assets\AppAsset.php
+            [message] => No short description for element '$basePath'
+        )
+
+    [2] => Array
+        (
+            [line] => 13
+            [file] => api\assets\AppAsset.php
+            [message] => No docblock for element '$baseUrl'
+        )
+
+    [3] => Array
+        (
+            [line] => 13
+            [file] => api\assets\AppAsset.php
+            [message] => No short description for element '$baseUrl'
+        )
+
+    [4] => Array
+        (
+            [line] => 14
+            [file] => api\assets\AppAsset.php
+            [message] => No docblock for element '$css'
+        )
+
+    [5] => Array
+        (
+            [line] => 14
+            [file] => api\assets\AppAsset.php
+            [message] => No short description for element '$css'
+        )
+
+    [6] => Array
+        (
+            [line] => 17
+            [file] => api\assets\AppAsset.php
+            [message] => No docblock for element '$js'
+        )
+
+    [7] => Array
+        (
+            [line] => 17
+            [file] => api\assets\AppAsset.php
+            [message] => No short description for element '$js'
+        )
+
+    [8] => Array
+        (
+            [line] => 19
+            [file] => api\assets\AppAsset.php
+            [message] => No docblock for element '$depends'
+        )
+
+    [9] => Array
+        (
+            [line] => 19
+            [file] => api\assets\AppAsset.php
+            [message] => No short description for element '$depends'
+        )
+
+    [10] => Array
+        (
+            [line] => 21
+            [file] => api\controllers\VodDetailController.php
+            [message] => No docblock for element '$modelClass'
+        )
+
+    [11] => Array
+        (
+            [line] => 21
+            [file] => api\controllers\VodDetailController.php
+            [message] => No short description for element '$modelClass'
+        )
+
+    [12] => Array
+        (
+            [line] => 56
+            [file] => api\controllers\VodDetailController.php
+            [message] => No docblock for element 'actionSearch'
+        )
+
+    [13] => Array
+        (
+            [line] => 6
+            [file] => common\fixtures\UserFixture.php
+            [message] => No docblock for element 'common\fixtures\UserFixture'
+        )
+
+    [14] => Array
+        (
+            [line] => 8
+            [file] => common\fixtures\UserFixture.php
+            [message] => No docblock for element '$modelClass'
+        )
+
+    [15] => Array
+        (
+            [line] => 8
+            [file] => common\fixtures\UserFixture.php
+            [message] => No short description for element '$modelClass'
+        )
+
+    [16] => Array
+        (
+            [line] => 12
+            [file] => common\models\LoginForm.php
+            [message] => No docblock for element '$username'
+        )
+
+    [17] => Array
+        (
+            [line] => 12
+            [file] => common\models\LoginForm.php
+            [message] => No short description for element '$username'
+        )
+
+    [18] => Array
+        (
+            [line] => 13
+            [file] => common\models\LoginForm.php
+            [message] => No docblock for element '$password'
+        )
+
+    [19] => Array
+        (
+            [line] => 13
+            [file] => common\models\LoginForm.php
+            [message] => No short description for element '$password'
+        )
+
+    [20] => Array
+        (
+            [line] => 14
+            [file] => common\models\LoginForm.php
+            [message] => No docblock for element '$rememberMe'
+        )
+
+    [21] => Array
+        (
+            [line] => 14
+            [file] => common\models\LoginForm.php
+            [message] => No short description for element '$rememberMe'
+        )
+
+    [22] => Array
+        (
+            [line] => 15
+            [file] => common\models\LoginForm.php
+            [message] => No docblock for element '$vitifyCode'
+        )
+
+    [23] => Array
+        (
+            [line] => 15
+            [file] => common\models\LoginForm.php
+            [message] => No short description for element '$vitifyCode'
+        )
+
+    [24] => Array
+        (
+            [line] => 19
+            [file] => common\models\LoginForm.php
+            [message] => No docblock for element 'attributeLabels'
+        )
+
+    [25] => Array
+        (
+            [line] => 122
+            [file] => common\models\VodDetail.php
+            [message] => No docblock for element 'getPlayurls'
+        )
+
+    [26] => Array
+        (
+            [line] => 140
+            [file] => common\models\VodDetail.php
+            [message] => No docblock for element 'afterFind'
+        )
+
+    [27] => Array
+        (
+            [line] => 148
+            [file] => common\models\VodDetail.php
+            [message] => No docblock for element 'updateHitnum'
+        )
+
+    [28] => Array
+        (
+            [line] => 12
+            [file] => frontend\assets\AppAsset.php
+            [message] => No docblock for element '$basePath'
+        )
+
+    [29] => Array
+        (
+            [line] => 12
+            [file] => frontend\assets\AppAsset.php
+            [message] => No short description for element '$basePath'
+        )
+
+    [30] => Array
+        (
+            [line] => 13
+            [file] => frontend\assets\AppAsset.php
+            [message] => No docblock for element '$baseUrl'
+        )
+
+    [31] => Array
+        (
+            [line] => 13
+            [file] => frontend\assets\AppAsset.php
+            [message] => No short description for element '$baseUrl'
+        )
+
+    [32] => Array
+        (
+            [line] => 14
+            [file] => frontend\assets\AppAsset.php
+            [message] => No docblock for element '$css'
+        )
+
+    [33] => Array
+        (
+            [line] => 14
+            [file] => frontend\assets\AppAsset.php
+            [message] => No short description for element '$css'
+        )
+
+    [34] => Array
+        (
+            [line] => 18
+            [file] => frontend\assets\AppAsset.php
+            [message] => No docblock for element '$js'
+        )
+
+    [35] => Array
+        (
+            [line] => 18
+            [file] => frontend\assets\AppAsset.php
+            [message] => No short description for element '$js'
+        )
+
+    [36] => Array
+        (
+            [line] => 23
+            [file] => frontend\assets\AppAsset.php
+            [message] => No docblock for element '$depends'
+        )
+
+    [37] => Array
+        (
+            [line] => 23
+            [file] => frontend\assets\AppAsset.php
+            [message] => No short description for element '$depends'
+        )
+
+    [38] => Array
+        (
+            [line] => 13
+            [file] => frontend\models\ContactForm.php
+            [message] => No docblock for element '$name'
+        )
+
+    [39] => Array
+        (
+            [line] => 13
+            [file] => frontend\models\ContactForm.php
+            [message] => No short description for element '$name'
+        )
+
+    [40] => Array
+        (
+            [line] => 14
+            [file] => frontend\models\ContactForm.php
+            [message] => No docblock for element '$email'
+        )
+
+    [41] => Array
+        (
+            [line] => 14
+            [file] => frontend\models\ContactForm.php
+            [message] => No short description for element '$email'
+        )
+
+    [42] => Array
+        (
+            [line] => 15
+            [file] => frontend\models\ContactForm.php
+            [message] => No docblock for element '$subject'
+        )
+
+    [43] => Array
+        (
+            [line] => 15
+            [file] => frontend\models\ContactForm.php
+            [message] => No short description for element '$subject'
+        )
+
+    [44] => Array
+        (
+            [line] => 16
+            [file] => frontend\models\ContactForm.php
+            [message] => No docblock for element '$body'
+        )
+
+    [45] => Array
+        (
+            [line] => 16
+            [file] => frontend\models\ContactForm.php
+            [message] => No short description for element '$body'
+        )
+
+    [46] => Array
+        (
+            [line] => 17
+            [file] => frontend\models\ContactForm.php
+            [message] => No docblock for element '$verifyCode'
+        )
+
+    [47] => Array
+        (
+            [line] => 17
+            [file] => frontend\models\ContactForm.php
+            [message] => No short description for element '$verifyCode'
+        )
+
+    [48] => Array
+        (
+            [line] => 13
+            [file] => frontend\models\PasswordResetRequestForm.php
+            [message] => No docblock for element '$email'
+        )
+
+    [49] => Array
+        (
+            [line] => 13
+            [file] => frontend\models\PasswordResetRequestForm.php
+            [message] => No short description for element '$email'
+        )
+
+    [50] => Array
+        (
+            [line] => 10
+            [file] => frontend\models\ResendVerificationEmailForm.php
+            [message] => No docblock for element 'frontend\models\ResendVerificationEmailForm'
+        )
+
+    [51] => Array
+        (
+            [line] => 15
+            [file] => frontend\models\ResendVerificationEmailForm.php
+            [message] => No short description for element '$email'
+        )
+
+    [52] => Array
+        (
+            [line] => 14
+            [file] => frontend\models\ResetPasswordForm.php
+            [message] => No docblock for element '$password'
+        )
+
+    [53] => Array
+        (
+            [line] => 14
+            [file] => frontend\models\ResetPasswordForm.php
+            [message] => No short description for element '$password'
+        )
+
+    [54] => Array
+        (
+            [line] => 14
+            [file] => frontend\models\SignupForm.php
+            [message] => No docblock for element '$username'
+        )
+
+    [55] => Array
+        (
+            [line] => 14
+            [file] => frontend\models\SignupForm.php
+            [message] => No short description for element '$username'
+        )
+
+    [56] => Array
+        (
+            [line] => 15
+            [file] => frontend\models\SignupForm.php
+            [message] => No docblock for element '$email'
+        )
+
+    [57] => Array
+        (
+            [line] => 15
+            [file] => frontend\models\SignupForm.php
+            [message] => No short description for element '$email'
+        )
+
+    [58] => Array
+        (
+            [line] => 16
+            [file] => frontend\models\SignupForm.php
+            [message] => No docblock for element '$password'
+        )
+
+    [59] => Array
+        (
+            [line] => 16
+            [file] => frontend\models\SignupForm.php
+            [message] => No short description for element '$password'
+        )
+
+    [60] => Array
+        (
+            [line] => 17
+            [file] => frontend\models\SignupForm.php
+            [message] => No docblock for element '$rePassword'
+        )
+
+    [61] => Array
+        (
+            [line] => 17
+            [file] => frontend\models\SignupForm.php
+            [message] => No short description for element '$rePassword'
+        )
+
+    [62] => Array
+        (
+            [line] => 18
+            [file] => frontend\models\SignupForm.php
+            [message] => No docblock for element '$vitifyCode'
+        )
+
+    [63] => Array
+        (
+            [line] => 18
+            [file] => frontend\models\SignupForm.php
+            [message] => No short description for element '$vitifyCode'
+        )
+
+    [64] => Array
+        (
+            [line] => 45
+            [file] => frontend\models\SignupForm.php
+            [message] => No docblock for element 'attributeLabels'
+        )
+
+    [65] => Array
+        (
+            [line] => 9
+            [file] => frontend\models\VerifyEmailForm.php
+            [message] => No docblock for element 'frontend\models\VerifyEmailForm'
+        )
+
+    [66] => Array
+        (
+            [line] => 14
+            [file] => frontend\models\VerifyEmailForm.php
+            [message] => No short description for element '$token'
+        )
+
+)

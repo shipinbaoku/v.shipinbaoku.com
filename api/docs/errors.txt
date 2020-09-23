@@ -1,0 +1,219 @@
+Array
+(
+    [0] => Array
+        (
+            [file] => 
+            [message] => broken link to \yii\bootstrap\Alert::closeButton
+        )
+
+    [1] => Array
+        (
+            [line] => 31
+            [file] => common\models\LoginForm.php
+            [message] => Method rules has no parent to inherit from in common\models\LoginForm.
+        )
+
+    [2] => Array
+        (
+            [line] => 24
+            [file] => common\models\PlayUrl.php
+            [message] => Method tableName has no parent to inherit from in common\models\PlayUrl.
+        )
+
+    [3] => Array
+        (
+            [line] => 32
+            [file] => common\models\PlayUrl.php
+            [message] => Method rules has no parent to inherit from in common\models\PlayUrl.
+        )
+
+    [4] => Array
+        (
+            [line] => 46
+            [file] => common\models\PlayUrl.php
+            [message] => Method attributeLabels has no parent to inherit from in common\models\PlayUrl.
+        )
+
+    [5] => Array
+        (
+            [line] => 35
+            [file] => common\models\User.php
+            [message] => Method tableName has no parent to inherit from in common\models\User.
+        )
+
+    [6] => Array
+        (
+            [line] => 43
+            [file] => common\models\User.php
+            [message] => Method behaviors has no parent to inherit from in common\models\User.
+        )
+
+    [7] => Array
+        (
+            [line] => 53
+            [file] => common\models\User.php
+            [message] => Method rules has no parent to inherit from in common\models\User.
+        )
+
+    [8] => Array
+        (
+            [line] => 64
+            [file] => common\models\User.php
+            [message] => Method findIdentity has no parent to inherit from in common\models\User.
+        )
+
+    [9] => Array
+        (
+            [line] => 72
+            [file] => common\models\User.php
+            [message] => Method findIdentityByAccessToken has no parent to inherit from in common\models\User.
+        )
+
+    [10] => Array
+        (
+            [line] => 139
+            [file] => common\models\User.php
+            [message] => Method getId has no parent to inherit from in common\models\User.
+        )
+
+    [11] => Array
+        (
+            [line] => 147
+            [file] => common\models\User.php
+            [message] => Method getAuthKey has no parent to inherit from in common\models\User.
+        )
+
+    [12] => Array
+        (
+            [line] => 155
+            [file] => common\models\User.php
+            [message] => Method validateAuthKey has no parent to inherit from in common\models\User.
+        )
+
+    [13] => Array
+        (
+            [line] => 52
+            [file] => common\models\VodDetail.php
+            [message] => Method tableName has no parent to inherit from in common\models\VodDetail.
+        )
+
+    [14] => Array
+        (
+            [line] => 60
+            [file] => common\models\VodDetail.php
+            [message] => Method rules has no parent to inherit from in common\models\VodDetail.
+        )
+
+    [15] => Array
+        (
+            [line] => 77
+            [file] => common\models\VodDetail.php
+            [message] => Method attributeLabels has no parent to inherit from in common\models\VodDetail.
+        )
+
+    [16] => Array
+        (
+            [line] => 52
+            [file] => common\models\VodDetail.php
+            [message] => Method tableName has no parent to inherit from in common\models\VodDetail.
+        )
+
+    [17] => Array
+        (
+            [line] => 60
+            [file] => common\models\VodDetail.php
+            [message] => Method rules has no parent to inherit from in common\models\VodDetail.
+        )
+
+    [18] => Array
+        (
+            [line] => 77
+            [file] => common\models\VodDetail.php
+            [message] => Method attributeLabels has no parent to inherit from in common\models\VodDetail.
+        )
+
+    [19] => Array
+        (
+            [line] => 29
+            [file] => common\models\VodDetailSearch.php
+            [message] => Method scenarios has no parent to inherit from in common\models\VodDetailSearch.
+        )
+
+    [20] => Array
+        (
+            [line] => 50
+            [file] => common\widgets\Alert.php
+            [message] => Method run has no parent to inherit from in common\widgets\Alert.
+        )
+
+    [21] => Array
+        (
+            [line] => 30
+            [file] => frontend\assets\AppAsset.php
+            [message] => Method $jsOptions has no parent to inherit from in frontend\assets\AppAsset.
+        )
+
+    [22] => Array
+        (
+            [line] => 26
+            [file] => frontend\controllers\SiteController.php
+            [message] => Method behaviors has no parent to inherit from in frontend\controllers\SiteController.
+        )
+
+    [23] => Array
+        (
+            [line] => 57
+            [file] => frontend\controllers\SiteController.php
+            [message] => Method actions has no parent to inherit from in frontend\controllers\SiteController.
+        )
+
+    [24] => Array
+        (
+            [line] => 20
+            [file] => frontend\controllers\VodDetailController.php
+            [message] => Method behaviors has no parent to inherit from in frontend\controllers\VodDetailController.
+        )
+
+    [25] => Array
+        (
+            [line] => 23
+            [file] => frontend\models\ContactForm.php
+            [message] => Method rules has no parent to inherit from in frontend\models\ContactForm.
+        )
+
+    [26] => Array
+        (
+            [line] => 38
+            [file] => frontend\models\ContactForm.php
+            [message] => Method attributeLabels has no parent to inherit from in frontend\models\ContactForm.
+        )
+
+    [27] => Array
+        (
+            [line] => 19
+            [file] => frontend\models\PasswordResetRequestForm.php
+            [message] => Method rules has no parent to inherit from in frontend\models\PasswordResetRequestForm.
+        )
+
+    [28] => Array
+        (
+            [line] => 21
+            [file] => frontend\models\ResendVerificationEmailForm.php
+            [message] => Method rules has no parent to inherit from in frontend\models\ResendVerificationEmailForm.
+        )
+
+    [29] => Array
+        (
+            [line] => 44
+            [file] => frontend\models\ResetPasswordForm.php
+            [message] => Method rules has no parent to inherit from in frontend\models\ResetPasswordForm.
+        )
+
+    [30] => Array
+        (
+            [line] => 24
+            [file] => frontend\models\SignupForm.php
+            [message] => Method rules has no parent to inherit from in frontend\models\SignupForm.
+        )
+
+)

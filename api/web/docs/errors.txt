@@ -1,0 +1,5 @@
+Array
+(
+    [0] => Unable to process "api\assets\AppAsset.php": exec() has been disabled for security reasons
+    [1] => Unable to process "api\controllers\VodDetailController.php": exec() has been disabled for security reasons
+)
