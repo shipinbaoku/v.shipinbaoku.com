@@ -5,7 +5,7 @@
 
 # phpstorm project files
 .idea
-
+nginx.htaccess
 # netbeans project files
 nbproject
 
