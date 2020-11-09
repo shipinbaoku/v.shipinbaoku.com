@@ -1,4 +1,5 @@
 <?php
+
 namespace frontend\controllers;
 
 use frontend\models\ResendVerificationEmailForm;
@@ -29,7 +30,7 @@ class SiteController extends BaseController
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['logout', 'signup','contact'],
+                'only' => ['logout', 'signup', 'contact'],
                 'rules' => [
                     [
                         'actions' => ['signup'],
@@ -37,7 +38,7 @@ class SiteController extends BaseController
                         'roles' => ['?'],
                     ],
                     [
-                        'actions' => ['logout','contact'],
+                        'actions' => ['logout', 'contact'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -70,7 +71,7 @@ class SiteController extends BaseController
 
     public function actionBrowser()
     {
-            return $this->renderPartial('checkbrowser');
+        return $this->renderPartial('checkbrowser');
 
     }
 
@@ -152,6 +153,21 @@ class SiteController extends BaseController
         return $this->render('about');
     }
 
+    public function actionPrivacy()
+    {
+        return $this->render('privacy');
+    }
+
+    public function actionCopyright()
+    {
+        return $this->renderPartial('copyright');
+    }
+
+    public function actionAndroidPermission()
+    {
+        return $this->render('androidPermission');
+    }
+
     /**
      * Signs user up.
      *
@@ -200,6 +216,7 @@ class SiteController extends BaseController
      * @param string $token
      * @return mixed
      * @throws BadRequestHttpException
+     * @throws \yii\base\Exception
      */
     public function actionResetPassword($token)
     {
@@ -224,8 +241,8 @@ class SiteController extends BaseController
      * Verify email address
      *
      * @param string $token
-     * @throws BadRequestHttpException
      * @return yii\web\Response
+     * @throws BadRequestHttpException
      */
     public function actionVerifyEmail($token)
     {

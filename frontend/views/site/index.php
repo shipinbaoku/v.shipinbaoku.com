@@ -21,7 +21,7 @@ $this->registerCssFile('@web/css/templatemo-style.css');
                     <p class="tm-home-text">
                         优化播放内核，支持主流视频格式，边播边缓存功能，让在线影片播放更流畅！
                     </p>
-                    <a href="#tmFeatures" class="btn btn-primary btn-lg active" role="button">立即下载</a>
+                    <a href="https://android.myapp.com/myapp/detail.htm?apkName=net.jinrikanpianplayer"  target="_blank" class="btn btn-primary btn-lg active" role="button">立即下载</a>
                 </div>
                 <div class="tm-home-right">
                     <img src="../img/mobile-screen.png" alt="App on Mobile mockup" />

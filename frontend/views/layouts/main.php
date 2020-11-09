@@ -47,6 +47,8 @@ AppAsset::register($this);
     $menuItems = [
         //['label' => '首页', 'url' => ['/site/index']],
         //['label' => '首页', 'url' => ['']],
+        ['label' => '影片Api', 'url' => 'https://api.shipinbofang.com/'],
+        ['label' => '开源项目', 'url' => 'https://www.shipinbaoku.com'],
         ['label' => '影片资源', 'url' => ['/vod-detail/index']],
         //['label' => '关于', 'url' => ['/site/about']],
         ['label' => '联系我们', 'url' => ['/site/contact']],
