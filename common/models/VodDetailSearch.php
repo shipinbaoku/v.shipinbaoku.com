@@ -44,7 +44,9 @@ class VodDetailSearch extends VodDetail
         $query = VodDetail::find();
 
         // add conditions that should always apply here
-
+        //$query->where(['not','vod_type = 伦理片']);
+        $query->where(['not', ['vod_type' => '伦理片']]);
+        
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
             'pagination' => ['pageSize' => 20],
