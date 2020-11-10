@@ -3,9 +3,9 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=v_shipinbaoku_com',
-            'username' => 'shipinbaoku',
-            'password' => 'shipinbaoku',
+            'dsn' => 'mysql:host=localhost;dbname=v.shipinbaoku.com',
+            'username' => 'v.shipinbaoku.com',
+            'password' => 'v.shipinbaoku.com',
             'charset' => 'utf8',
         ],
         'mailer' => [
