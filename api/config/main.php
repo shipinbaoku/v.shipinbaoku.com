@@ -8,8 +8,10 @@ $params = array_merge(
 
 return [
     'id' => 'app-api',
+    'name'=>'篱笆播放器影片Api',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'api\controllers',
+    'defaultRoute' => 'site/index', //默认的路由
     'language' => 'zh-CN',
     'bootstrap' => ['log'],
     'modules' => [],
@@ -50,9 +52,10 @@ return [
         'urlManager' => [
             'enablePrettyUrl' => true,
             //严格解析 至少要符合rules中的一条，否则抛出异常
-            'enableStrictParsing' => true,
+            //'enableStrictParsing' => true,
             'showScriptName' => false,
             'rules' => [
+               
                 [
                     'class' => 'yii\rest\UrlRule',
                     'controller' => 'vod-detail',

@@ -81,6 +81,13 @@ class VodDetailController extends ActiveController
         $searchModel = new VodDetailSearch();
         return $searchModel->search($params);
     }
+    
+    
+   /* public function beforeAction($action)
+    {
+       return Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+    }*/
+
 
     /*public function actionSearch()
     {

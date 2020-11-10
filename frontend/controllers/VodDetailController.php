@@ -32,7 +32,7 @@ class VodDetailController extends BaseController
                 'rules' =>
                     [
                         [
-                            'actions' => ['index'],
+                            'actions' => ['index','view'],
                             'allow' => true,
                             'roles' => ['?'],
                         ],
