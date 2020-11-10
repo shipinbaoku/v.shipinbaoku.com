@@ -3,6 +3,7 @@
 namespace common\models;
 
 use Yii;
+use yii\data\ActiveDataProvider;
 use yii\helpers\ArrayHelper;
 
 /**
@@ -125,6 +126,29 @@ class VodDetail extends \yii\db\ActiveRecord
 //        $playurls = $this->hasMany(PlayUrl::className(), ['url_id' => 'url_id']);
 //        return ArrayHelper::index($playurls, null, 'play_from');
     }
+
+    public function getCommentary(){
+        $query = VodDetail::find();
+
+        // add conditions that should always apply here
+        //$query->where(['not','vod_type = 伦理片']);
+       // $query->where(['not', ['vod_type' => '伦理片']]);
+        $query->where(['not', ['id' =>$this->id]]);
+
+//        $dataProvider = new ActiveDataProvider([
+//            'query' => $query,
+//            'pagination' => ['pageSize' => 20],
+//            'sort' => [
+//                'defaultOrder' => ['vod_update_time' => SORT_DESC],
+////                'attributes' => ['id', 'title'],
+//            ],
+//        ]);
+        $query->andFilterWhere(['like', 'vod_title', $this->vod_title]);
+
+        return $query;
+
+    }
+
     
     public function fields()
     {
@@ -143,7 +167,7 @@ class VodDetail extends \yii\db\ActiveRecord
 
     public function extraFields()
     {
-        return ['playurls'];
+        return ['playurls','commentary'];
     }
 
     public function afterFind()
