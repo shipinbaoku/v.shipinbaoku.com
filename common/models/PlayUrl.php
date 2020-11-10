@@ -56,4 +56,14 @@ class PlayUrl extends \yii\db\ActiveRecord
             'update_time' => 'Update Time',
         ];
     }
+    
+    
+    public function fields()
+    {
+        $fields=parent::fields();
+        unset($fields['play_url_aes']);
+        unset($fields['url_id']);
+        return $fields;
+
+    }
 }
