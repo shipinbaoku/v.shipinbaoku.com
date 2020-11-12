@@ -62,9 +62,7 @@ return [
                     'ruleConfig' => [
                         'class' => 'yii\web\UrlRule',
                         'defaults' => [
-                            //'expand' => ['playurls','commentary'],
-                            'expand' => 'commentary',
-//                            'expand' => 'playurls',
+                            'expand' => 'playurls',
                         ],
                     ],
                     'extraPatterns' => [

@@ -63,7 +63,7 @@ class VodDetail extends \yii\db\ActiveRecord
         return [
             [['url', 'url_id', 'vod_title'], 'required'],
             [['vod_content'], 'string'],
-            [['vod_status', 'vod_pubdate', 'vod_hits', 'vod_hits_day', 'vod_hits_week', 'vod_hits_month', 'vod_up', 'vod_down', 'vod_score_all', 'vod_score_num', 'vod_create_time', 'vod_update_time', 'vod_lately_hit_time','vod_lately_ip'], 'integer'],
+            [['vod_status', 'vod_pubdate', 'vod_hits', 'vod_hits_day', 'vod_hits_week', 'vod_hits_month', 'vod_up', 'vod_down', 'vod_score_all', 'vod_score_num', 'vod_create_time', 'vod_update_time', 'vod_lately_hit_time', 'vod_lately_ip'], 'integer'],
             [['vod_score'], 'number'],
             [['url'], 'string', 'max' => 500],
             [['url_id'], 'string', 'max' => 100],
@@ -123,38 +123,37 @@ class VodDetail extends \yii\db\ActiveRecord
     public function getPlayurls()
     {
         return $this->hasMany(PlayUrl::className(), ['url_id' => 'url_id']);
-//        $playurls = $this->hasMany(PlayUrl::className(), ['url_id' => 'url_id']);
-//        return ArrayHelper::index($playurls, null, 'play_from');
     }
 
-    public function getCommentary(){
-        $query = VodDetail::find();
-
-        // add conditions that should always apply here
-        //$query->where(['not','vod_type = 伦理片']);
-       // $query->where(['not', ['vod_type' => '伦理片']]);
-        $query->where(['not', ['id' =>$this->id]]);
-
-//        $dataProvider = new ActiveDataProvider([
-//            'query' => $query,
-//            'pagination' => ['pageSize' => 20],
-//            'sort' => [
-//                'defaultOrder' => ['vod_update_time' => SORT_DESC],
-////                'attributes' => ['id', 'title'],
-//            ],
-//        ]);
-        $query->andFilterWhere(['like', 'vod_title', $this->vod_title]);
-
+    public function getCommentary()
+    {
+        $query = VodDetail::find()->where(['like', 'vod_title', $this->vod_title])
+            ->andFilterWhere(['not', ['id' => $this->id]])
+            ->andFilterWhere(['like', 'vod_type', '解说'])
+            ->all();
         return $query;
 
+
     }
 
-    
+
     public function fields()
     {
-        $fields=parent::fields();
+        $fields = parent::fields();
         unset($fields['url']);
         unset($fields['url_id']);
+        /***
+         * 给model增加commentary属性
+         * @param $model
+         * @return mixed
+         */
+        $fields['commentary'] = function ($model) {
+            $query = $model::find()->where(['like', 'vod_title', $this->vod_title])
+                ->andFilterWhere(['like', 'vod_type', '解说'])
+                ->andFilterWhere(['not', ['id' => $this->id]])
+                ->all();
+            return $query;
+        };
         return $fields;
 
     }
@@ -167,7 +166,7 @@ class VodDetail extends \yii\db\ActiveRecord
 
     public function extraFields()
     {
-        return ['playurls','commentary'];
+        return ['playurls'];
     }
 
     public function afterFind()
@@ -197,15 +196,15 @@ class VodDetail extends \yii\db\ActiveRecord
         } else {
             $this->vod_hits_month = 0;
         }
-        $this->vod_hits +=1;
+        $this->vod_hits += 1;
         $this->vod_lately_hit_time = $now; //更新点击时间
         $this->save();
 
     }
-    
+
     public function sendTobaidu()
     {
-        $url = Yii::$app->request->hostInfo.Yii::$app->request->url;
+        $url = Yii::$app->request->hostInfo . Yii::$app->request->url;
         $urls = [$url];
         $api = 'http://data.zz.baidu.com/urls?site=https://www.shipinbofang.com&token=TEb3H5aalWBP6n8i';
         $ch = curl_init();
