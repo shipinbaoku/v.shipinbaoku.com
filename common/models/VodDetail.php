@@ -166,7 +166,7 @@ class VodDetail extends \yii\db\ActiveRecord
 
     public function extraFields()
     {
-        return ['commentary'];
+        return ['commentary','playurls'];
     }
 
     public function afterFind()
