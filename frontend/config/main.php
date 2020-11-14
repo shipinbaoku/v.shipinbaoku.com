@@ -10,6 +10,7 @@ return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'modules' => [],
     'controllerNamespace' => 'frontend\controllers',
     'defaultRoute' => 'site/index', //默认的路由
     //'catchAll'=>['site/browser'],

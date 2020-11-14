@@ -125,16 +125,31 @@ class VodDetail extends \yii\db\ActiveRecord
         return $this->hasMany(PlayUrl::className(), ['url_id' => 'url_id']);
     }
 
+    /***
+     * 按照标题获取相关的解说信息
+     * @return array|\yii\db\ActiveRecord[]
+     */
     public function getCommentary()
     {
         $query = VodDetail::find()->where(['like', 'vod_title', $this->vod_title])
             ->andFilterWhere(['not', ['id' => $this->id]])
-            //->andFilterWhere(['like', 'vod_type', '解说'])
+//            ->andFilterWhere(['like', 'vod_type', '解说'])
             ->all();
         return $query;
 
 
     }
+
+    /***
+     * 获取影片相关的演员、导演数据
+     * @return array|\yii\db\ActiveRecord[]
+     */
+    public function getActors(){
+        $arrayActors = explode(',',$this->vod_actor);
+        $arrayDirector = explode(',',$this->vod_director);
+        return Actor::find()->where(['in', 'actor_name', array_merge($arrayActors,$arrayDirector)])->all();
+    }
+
 
 
     public function fields()
@@ -166,7 +181,7 @@ class VodDetail extends \yii\db\ActiveRecord
 
     public function extraFields()
     {
-        return ['commentary','playurls'];
+        return ['commentary','playurls','actors'];
     }
 
     public function afterFind()
