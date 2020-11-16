@@ -16,7 +16,7 @@ use yii\rest\ActiveController;
 class VodDetailController extends ActiveController
 {
 
-    public $modelClass = 'common\models\VodDetail';
+    public $modelClass = 'api\models\VodDetail';
 
     /**添加QueryParamAuth过滤器，将来调用该过滤器中的行为，必须带上access_token
      * @return array

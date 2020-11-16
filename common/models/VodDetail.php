@@ -136,8 +136,6 @@ class VodDetail extends \yii\db\ActiveRecord
 //            ->andFilterWhere(['like', 'vod_type', '解说'])
             ->all();
         return $query;
-
-
     }
 
     /***
@@ -162,13 +160,13 @@ class VodDetail extends \yii\db\ActiveRecord
          * @param $model
          * @return mixed
          */
-//        $fields['commentary'] = function ($model) {
-//            $query = $model::find()->where(['like', 'vod_title', $this->vod_title])
-//                //->andFilterWhere(['like', 'vod_type', '解说'])
-//                ->andFilterWhere(['not', ['id' => $this->id]])
-//                ->all();
-//            return $query;
-//        };
+/*        $fields['commentary'] = function () {
+            $query = VodDetail::find()->where(['like', 'vod_title', $this->vod_title])
+                ->andFilterWhere(['not', ['id' => $this->id]])
+//            ->andFilterWhere(['like', 'vod_type', '解说'])
+                ->all();
+            return $query;
+        };*/
         return $fields;
 
     }
