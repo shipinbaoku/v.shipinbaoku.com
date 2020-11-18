@@ -4,12 +4,10 @@
 namespace api\models;
 
 
+use common\models\PlayUrl;
+
 class VodDetail extends \common\models\VodDetail
 {
-    public function __construct($config = [])
-    {
 
-        parent::__construct($config);
-    }
 
 }

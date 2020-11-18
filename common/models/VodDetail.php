@@ -5,6 +5,7 @@ namespace common\models;
 use Yii;
 use yii\data\ActiveDataProvider;
 use yii\helpers\ArrayHelper;
+use function React\Promise\all;
 
 /**
  * This is the model class for table "vod_detail".
@@ -133,7 +134,7 @@ class VodDetail extends \yii\db\ActiveRecord
     {
         $query = VodDetail::find()->where(['like', 'vod_title', $this->vod_title])
             ->andFilterWhere(['not', ['id' => $this->id]])
-//            ->andFilterWhere(['like', 'vod_type', '解说'])
+            ->andFilterWhere(['like', 'vod_type', '解说'])
             ->all();
         return $query;
     }
@@ -160,12 +161,17 @@ class VodDetail extends \yii\db\ActiveRecord
          * @param $model
          * @return mixed
          */
-/*        $fields['commentary'] = function () {
-            $query = VodDetail::find()->where(['like', 'vod_title', $this->vod_title])
+        /*$fields['commentary'] = function ($model) {
+            $query = $this::find()->where(['like', 'vod_title', $this->vod_title])
                 ->andFilterWhere(['not', ['id' => $this->id]])
-//            ->andFilterWhere(['like', 'vod_type', '解说'])
+            //->andFilterWhere(['like', 'vod_type', '解说'])
                 ->all();
             return $query;
+        };
+        $fields['playurls']=function ($model){
+            $playurls = PlayUrl::find()->where(['url_id' => $this->url_id])->all();
+            return $playurls;
+
         };*/
         return $fields;
 
