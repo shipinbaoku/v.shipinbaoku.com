@@ -14,6 +14,8 @@ $this->params['breadcrumbs'][] = ['label' => '影片列表', 'url' => ['index']]
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 $playurlsList = ArrayHelper::index($model->playurls, null, 'play_from');
+var_dump($model->actors);exit();
+
 ?>
 <div class="stui-pannel clearfix">
     <div class="stui-content clearfix">
@@ -95,3 +97,19 @@ $playurlsList = ArrayHelper::index($model->playurls, null, 'play_from');
         </div>
     </div>
 <?php endforeach; ?>
+
+
+<div class="stui-pannel clearfix" id="playlist">
+    <div class="stui-pannel__head clearfix">
+        <h3 class="title"><?php echo $title."相关推荐"?> </h3>
+    </div>
+    <ul class="stui-content__playlist clearfix">
+        <?php foreach ($model->commentary as $cvodDetail): ?>
+            <li class="list-group-item">
+                <?=Html::a($cvodDetail->vod_title, Yii::$app->urlManager->createUrl(
+                    ['vod-detail/view', 'id' => $cvodDetail->id, 'title' => $cvodDetail->vod_title]), ['title' => $cvodDetail->vod_title]);?>
+            </li>
+        <?php endforeach; ?>
+        <!-- end 播放地址 -->
+    </ul>
+</div>
